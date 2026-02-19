@@ -5,7 +5,7 @@ When working with such a grid, we often need a **mapping from 2D coordinates to 
 
 In this folder, you will find **two Fortran modules**:  
 
-- `TWOtoONE.f90` → converts **2D coordinates to 1D ID**  
+- `twoD2oneD.f90` → converts **2D coordinates to 1D ID**  
 - `ONETO2.f90` → converts **1D ID back to 2D coordinates**
 
 On the following, I added the pseudo-code: 
