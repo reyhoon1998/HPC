@@ -10,11 +10,11 @@ In this folder, you will find **two Fortran modules**:
 
 On the following, I added the pseudo-code: 
 
-function 2D_to_1D(x, y, box_size):
+function 2D_to_1D(x, y, box_size): \\
     id = y * box_size + x
     return id
 
-function 1D_to_2D(id, box_size):
+function 1D_to_2D(id, box_size): \\
     y = id / box_size
     x = id % box_size
     return x, y
