@@ -21,8 +21,9 @@ On the following, I added the pseudo-code:
     Step 1: id = y * box_size + x
     Step 2: return id
 
-
-
+```
+## Pseudo-code for 1D → 2D
+```text
 1D_to_2D function:
 Input: id        
        box_size     
@@ -31,3 +32,4 @@ Output: x, y
 Step 1: y = integer division of id by box_size
 Step 2: x = remainder of id divided by box_size
 Step 3: return x, y
+```
