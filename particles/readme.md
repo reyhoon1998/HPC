@@ -10,11 +10,20 @@ In this folder, you will find **two Fortran modules**:
 
 On the following, I added the pseudo-code: 
 
-function 2D_to_1D(x, y, box_size): \\
-    id = y * box_size + x
-    return id
+2D_to_1D function :
+Input: x, y         // coordinates in 2D box
+       box_size     // number of cells per row
+Output: id          // unique 1D identifier
 
-function 1D_to_2D(id, box_size): \\
-    y = id / box_size
-    x = id % box_size
-    return x, y
+Step 1: id = y * box_size + x
+Step 2: return id
+
+
+1D_to_2D function:
+Input: id           // 1D identifier
+       box_size     // number of cells per row
+Output: x, y        // original 2D coordinates
+
+Step 1: y = integer division of id by box_size
+Step 2: x = remainder of id divided by box_size
+Step 3: return x, y
