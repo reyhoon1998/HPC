@@ -13,21 +13,20 @@ On the following, I added the pseudo-code:
 ## Pseudo-code for 2D → 1D
 
 ```text
-Algorithm 2D_to_1D
+2D_to_1D function:
     Input: x, y         // coordinates in 2D box
-           box_size     // number of cells per row
-    Output: id          // unique 1D identifier
+           box_size     
+    Output: id         
 
     Step 1: id = y * box_size + x
     Step 2: return id
-End Algorithm
 
 
 
 1D_to_2D function:
-Input: id           // 1D identifier
-       box_size     // number of cells per row
-Output: x, y        // original 2D coordinates
+Input: id        
+       box_size     
+Output: x, y       
 
 Step 1: y = integer division of id by box_size
 Step 2: x = remainder of id divided by box_size
